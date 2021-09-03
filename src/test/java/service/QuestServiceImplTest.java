@@ -1,11 +1,12 @@
 package service;
 
-import dao.QuestDAO;
-import entity.Quest;
+import otus.dz.dao.QuestDAO;
+import otus.dz.entity.Quest;
 import org.apache.commons.collections4.CollectionUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import otus.dz.service.QuestServiceImpl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,8 +29,7 @@ class QuestServiceImplTest {
         Quest quest1 = new Quest("1", "?", "yes");
         List<Quest> questList = Arrays.asList(quest1);
         Mockito.when(questDAO.getAllQuests()).thenReturn(questList);
-        questService.getAllQuests();
-        assertTrue(CollectionUtils.isNotEmpty(questList));
+        assertTrue(CollectionUtils.isNotEmpty(questService.getAllQuests()));
     }
 
 }
