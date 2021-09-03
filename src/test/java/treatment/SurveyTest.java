@@ -1,10 +1,11 @@
 package treatment;
 
-import entity.Quest;
+import otus.dz.entity.Quest;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import otus.dz.treatment.Survey;
 
 import java.util.List;
 

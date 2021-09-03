@@ -1,4 +1,4 @@
-package entity;
+package otus.dz.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
